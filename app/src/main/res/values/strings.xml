@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ContanctManagerApp</string>
+    <string name="groupType">Group Type</string>
+    <string-array name="group_type">
+        <item>FAMILY</item>
+        <item>WORK</item>
+        <item>FRIEND</item>
+        <item>OTHER</item>
+    </string-array>
+</resources>

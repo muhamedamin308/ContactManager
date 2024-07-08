@@ -1,0 +1,63 @@
+<!-- res/values/styles.xml -->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorPrimaryDark">@color/light_primary</item>
+        <item name="colorAccent">@color/light_secondary</item>
+        <item name="android:windowBackground">@color/light_background</item>
+    </style>
+
+    <!-- Light theme -->
+    <style name="Theme.MyApp.Light" parent="AppTheme">
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorPrimaryDark">@color/light_primary</item>
+        <item name="colorAccent">@color/light_secondary</item>
+        <item name="android:windowBackground">@color/light_background</item>
+    </style>
+
+    <!-- Dark theme -->
+    <style name="Theme.MyApp.Dark" parent="AppTheme">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryDark">@color/dark_primary</item>
+        <item name="colorAccent">@color/dark_secondary</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+    </style>
+
+    <!-- Primary TextView style -->
+    <style name="PrimaryItemsStyle">
+        <item name="android:textColor">@color/light_font</item>
+        <item name="android:tint">@color/light_font</item>
+        <item name="android:fontFamily">@font/abeezee</item>
+
+    </style>
+
+    <!-- Secondary TextView style -->
+    <style name="SecondaryItemsStyle">
+        <item name="android:textColor">@color/light_secondary_font</item>
+        <item name="android:tint">@color/light_secondary_font</item>
+        <item name="android:fontFamily">@font/abeezee</item>
+    </style>
+
+    <style name="PrimaryCardStyle">
+        <item name="android:background">@color/light_background</item>
+    </style>
+
+    <style name="ActivateCircleStateStyle">
+        <item name="android:background">@color/light_background</item>
+        <item name="android:tint">@color/light_primary</item>
+    </style>
+
+    <style name="DisableCircleStateStyle">
+        <item name="android:background">@color/light_background</item>
+        <item name="android:tint">@color/light_secondary_lighter</item>
+    </style>
+
+
+    <style name="BottomNavigationStyle">
+        <item name="android:background">@color/light_secondary</item>
+    </style>
+
+</resources>

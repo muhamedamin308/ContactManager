@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp">
+
+
+        <ImageView
+            android:id="@+id/save_contact_updates"
+            style="@style/ActivateCircleStateStyle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_done_all_24" />
+
+
+        <ImageView
+            android:id="@+id/navigate_back_icon"
+            style="@style/SecondaryItemsStyle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_navigate_before_24" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/PrimaryItemsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Contact"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/save_contact_updates"
+            app:layout_constraintEnd_toStartOf="@+id/save_contact_updates"
+            app:layout_constraintStart_toEndOf="@+id/navigate_back_icon"
+            app:layout_constraintTop_toTopOf="@+id/save_contact_updates" />
+
+        <ImageView
+            android:id="@+id/contact_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/baseline_account_circle_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:tint="@color/light_primary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="16dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/contact_profile">
+
+            <EditText
+                android:id="@+id/contact_first_name"
+                style="@style/PrimaryItemsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/search_edit_text_box"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_last_name"
+                style="@style/PrimaryItemsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/search_edit_text_box"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_phone"
+                style="@style/PrimaryItemsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/search_edit_text_box"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/contact_email"
+                style="@style/PrimaryItemsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/search_edit_text_box"
+                android:ems="10"
+                android:hint="example@example.com"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="10/10/2000"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                style="@style/PrimaryItemsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="24dp"
+                android:entries="@array/group_type"
+                android:prompt="@string/groupType"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/street_edittext"
+                    style="@style/PrimaryItemsStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_edit_text_box"
+                    android:ems="10"
+                    android:hint="23 Abo Elfotoh"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/city_edititext"
+                    style="@style/PrimaryItemsStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_edit_text_box"
+                    android:ems="10"
+                    android:hint="Ain Shams"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/state_edittext"
+                    style="@style/PrimaryItemsStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_edit_text_box"
+                    android:ems="10"
+                    android:hint="Cairo"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/zipcode_edittext"
+                    style="@style/PrimaryItemsStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:autofillHints="109129"
+                    android:background="@drawable/search_edit_text_box"
+                    android:ems="10"
+                    android:hint="109129"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
